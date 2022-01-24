@@ -12,6 +12,7 @@
 - name: infrastructure
   skills:
     - name: linux
+    - name: cloudflare
 
 - name: ci-cd
   skills:
