@@ -1,0 +1,21 @@
+- name: back-end
+  skills:
+    - name: csharp-dotnet
+    - name: python-django
+    - name: php-laravel
+
+- name: databases
+  skills:
+    - name: mysql
+    - name: mongodb
+
+- name: infrastructure
+  skills:
+    - name: linux
+
+- name: ci-cd
+  skills:
+    - name: github-actions
+    - name: jenkins
+  
+
