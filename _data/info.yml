@@ -10,16 +10,16 @@ bio: Hi I'm Xander, an aspiring and passionate software engineer.<br><br>
 socials:
   - name: Linkedin
     url: https://www.linkedin.com/in/xdoubleu
-    icon: cib-linkedin
+    icon: simple-icons:linkedin
   - name: GitHub
     url: https://github.com/XDoubleU
-    icon: cib-github
-  - name: Stackoverflow
-    url: https://stackoverflow.com/users/13913719/xdoubleu
-    icon: cib-stackoverflow
+    icon: simple-icons:github
   - name: Hackerrank
     url: https://www.hackerrank.com/xdoubleu
-    icon: cib-hackerrank
+    icon: cib:hackerrank
   - name: Leetcode
     url: https://leetcode.com/XDoubleU
-    icon: cib-leetcode
+    icon: cib:leetcode
+  - name: TryHackMe
+    url: https://tryhackme.com/p/xdoubleu
+    icon: simple-icons:tryhackme
