@@ -62,7 +62,7 @@ a:hover{
     margin: 2em auto 1em auto;
     list-style-type: none;
 }
-#socials span{
+#socials a{
     display: inline;
     margin-right: 0.5em;
 }
