@@ -2,12 +2,6 @@
   skills:
     - name: csharp-dotnet
     - name: python-django
-    - name: php-laravel
-
-- name: databases
-  skills:
-    - name: mysql
-    - name: mongodb
 
 - name: infrastructure
   skills:
