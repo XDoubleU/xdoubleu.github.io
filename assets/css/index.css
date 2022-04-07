@@ -67,6 +67,12 @@ a:hover{
     margin-right: 0.5em;
 }
 /* Main */
+@media (max-width: 576px) { 
+  .main-content {
+      overflow: hidden;
+  }
+}
+
 .content-row{
     margin-left: 0.5em;
 }
