@@ -135,11 +135,20 @@ function getSoftSkills(softskills){
 function getExperiences(experiences){
     $.each(experiences, function(index, experience){
         if(experience.end == null){
-            $('#experiences').append(
+            $('#experiences').prepend(
                 `<div class="custom-card">
                     <h5>${experience.title}</h5>
                     <p>${experience.company}</p>
                     <p>${experience.start} - Present</p>
+                </div>`
+            );
+        }
+        else if(experience.start == experience.end){
+            $('#experiences').append(
+                `<div class="custom-card">
+                    <h5>${experience.title}</h5>
+                    <p>${experience.company}</p>
+                    <p>${experience.start}</p>
                 </div>`
             );
         }
@@ -158,7 +167,7 @@ function getExperiences(experiences){
 function getEducation(educations){
     $.each(educations, function(index, education){
         if(education.end == null){
-            $('#education').append(
+            $('#education').prepend(
                 `<div class="custom-card">
                     <h5>${education.name}</h5>
                     <p>${education.school}</p>

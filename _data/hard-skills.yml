@@ -2,17 +2,14 @@
   skills:
     - name: csharp-dotnet
     - name: python-django
-    - name: python-flask/fastapi
 
 - name: infrastructure
   skills:
     - name: linux
     - name: docker
-    - name: cloudflare
 
 - name: ci-cd
   skills:
     - name: github-actions
-    - name: jenkins
   
 
