@@ -1,10 +1,10 @@
 first_name: Xander
 last_name: Warszawski
 username: XDoubleU
-bio: I'm an engineering technology student passionated by anything concerning software engineering.<br><br>
-     In my free time I like to listen to <u><a target="_blank" href="https://volt.fm/xdoubleu">music</a></u> & podcasts, 
+bio: I'm an engineering technology student passionated by the wonderful world of software engineering.<br><br>
+     In my spare time I like to listen to <u><a target="_blank" href="https://volt.fm/xdoubleu">music</a></u> & podcasts, 
      watch <u><a target="_blank" href="https://letterboxd.com/xdoubleu/">movies</a></u> (especially <u><a target="_blank" href="assets/img/i-love-you-3000.jpg">Marvel</a></u>), 
-     <u><a target="_blank" href="https://goodreads.com/xdoubleu">read non-fiction literature</a></u> 
+     <u><a target="_blank" href="https://goodreads.com/xdoubleu">read science-fiction and non-fiction</a></u> 
      and <u><a target="_blank" href="https://completionist.me/steam/profile/76561198127953838">play video games</a></u>.<br><br>
      I also love learning new stuff and taking several hours to automate things that could be done manually in 15 minutes.
 socials:
@@ -17,9 +17,3 @@ socials:
   - name: Hackerrank
     url: https://www.hackerrank.com/xdoubleu
     icon: cib:hackerrank
-  - name: Leetcode
-    url: https://leetcode.com/XDoubleU
-    icon: cib:leetcode
-  - name: TryHackMe
-    url: https://tryhackme.com/p/xdoubleu
-    icon: simple-icons:tryhackme

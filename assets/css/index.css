@@ -27,7 +27,8 @@ a:hover{
     animation: gradient 20s ease infinite;
 }
 .side-content{
-    padding-top: 2em;
+    padding-top: 4em;
+    text-align: center;
 }
 #picture-me{
     display: block;
@@ -66,17 +67,19 @@ a:hover{
 }
 #socials a{
     display: inline;
+    margin-left: 0.5em;
     margin-right: 0.5em;
 }
 /* Main */
-@media (max-width: 576px) { 
-  .main-content {
-      height: 100%!important;
-      overflow: hidden!important;
-  }
+@media (min-width: 768px) { 
+    .overflow{
+          height: 100vh!important;  
+          overflow: auto!important;
+    }
 }
 
 .content-row{
+    margin-top: 2em;
     margin-left: 0.5em;
 }
 .content-col{
@@ -118,6 +121,12 @@ a:hover{
     margin-right: 4px;
     background-color: #539bf5;
 }
+.section-title{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+
 /* Footer */
 .footer{
     margin-top:10em;
