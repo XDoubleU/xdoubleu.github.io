@@ -43,7 +43,7 @@ function generateTagHtml(tags){
     var html = "";
     var char_count = 0;
     $.each(tags, function(index, tag){
-        if (char_count + tag.length <= 35){
+        if (char_count + tag.length <= 30){
             html += `<span class="tag">${tag}</span>`;
             char_count += tag.length;
         }
