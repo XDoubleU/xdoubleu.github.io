@@ -66,8 +66,9 @@
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script type="text/javascript">
+    getExtraRepos(JSON.parse('{{site.data.extra_repos | jsonify}}'));
     getRepos("{{site.data.info.username}}");
-    getWorkshops(JSON.parse('{{site.data.workshops | jsonify}}'))
+    getWorkshops(JSON.parse('{{site.data.workshops | jsonify}}'));
 </script>
 </body>
 </html>
