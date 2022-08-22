@@ -1,10 +1,32 @@
+var count = 0;
+
+function getExtraRepos(repos){
+    $.each(repos, function(index, repo){
+        $.ajax({
+            url: "https://api.github.com/repos/" + repo.name,
+            dataType: 'jsonp',
+            success: function(data){
+                count+=1;
+
+                data = data.data;
+                $('#projects').append(
+                    `<div class="custom-card">
+                        <a href="${data.html_url}"><h5>${data.name}</h5></a>
+                        <div style="height:30px">${generateTagHtml(data.topics)}</div>
+                        <div style="height:50px">${generateDescriptionHtml(data.description)}</div>
+                        <div style="height:25px">${generateLanguageHtml(data.language)}</div>
+                    </div>`
+                );
+            }
+        })
+    });
+}
+
 function getRepos(username){
     $.ajax({
         url: "https://api.github.com/users/" + username + "/repos?type=all&sort=pushed",
         dataType: 'jsonp',
         success: function(data){
-            var count = 0;
-
             $.each(data.data, function(index, repo){
                 if(count < 7 && repo.topics.length > 0 && repo.description != null){
                     count += 1;
