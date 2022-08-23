@@ -1,4 +1,5 @@
-var count = 0;
+let count = 0;
+let latestRow = null;
 
 function getExtraRepos(repos){
     $.each(repos, function(index, repo){
@@ -6,17 +7,23 @@ function getExtraRepos(repos){
             url: "https://api.github.com/repos/" + repo.name,
             dataType: 'jsonp',
             success: function(data){
+                if(count % 4 == 0){
+                    latestRow = document.createElement("div");
+                    latestRow.className = "row";
+                    document.getElementById("projects").appendChild(latestRow);
+                }
+
                 count+=1;
 
                 data = data.data;
-                $('#projects').append(
-                    `<div class="custom-card">
-                        <a href="${data.html_url}"><h5>${data.name}</h5></a>
-                        <div style="height:30px">${generateTagHtml(data.topics)}</div>
-                        <div style="height:50px">${generateDescriptionHtml(data.description)}</div>
-                        <div style="height:25px">${generateLanguageHtml(data.language)}</div>
+                latestRow.innerHTML +=
+                    `<div class="col-sm-3 custom-card">
+                            <a href="${data.html_url}"><h5>${data.name}</h5></a>
+                            <div>${generateTagHtml(data.topics)}</div>
+                            <div>${generateDescriptionHtml(data.description)}</div>
+                            <div>${generateLanguageHtml(data.language)}</div>
                     </div>`
-                );
+                ;
             }
         })
     });
@@ -28,26 +35,32 @@ function getRepos(username){
         dataType: 'jsonp',
         success: function(data){
             $.each(data.data, function(index, repo){
+                if(count % 4 == 0){
+                    latestRow = document.createElement("div");
+                    latestRow.className = "row";
+                    document.getElementById("projects").appendChild(latestRow);
+                }
+
                 if(count < 7 && repo.topics.length > 0 && repo.description != null){
                     count += 1;
                     
-                    $('#projects').append(
-                        `<div class="custom-card">
+                    latestRow.innerHTML +=
+                        `<div class="col-sm-3 custom-card">
                             <a href="${repo.html_url}"><h5>${repo.name}</h5></a>
-                            <div style="height:30px">${generateTagHtml(repo.topics)}</div>
-                            <div style="height:50px">${generateDescriptionHtml(repo.description)}</div>
-                            <div style="height:25px">${generateLanguageHtml(repo.language)}</div>
+                            <div>${generateTagHtml(repo.topics)}</div>
+                            <div>${generateDescriptionHtml(repo.description)}</div>
+                            <div>${generateLanguageHtml(repo.language)}</div>
                         </div>`
-                    );
+                    ;
                 }         
             });
 
             if (count >= 7){
-                $('#projects').append(
-                    `<div class="custom-card">
-                        <a href="https://github.com/${username}?tab=repositories"><h5>See more</h5></a>
+                latestRow.innerHTML +=
+                    `<div class="col-sm-3 custom-card">
+                        <a href="https://github.com/${username}?tab=repositories"><h5>See more →</h5></a>
                     </div>`
-                );
+                ;
             }
         }
     });
@@ -105,12 +118,18 @@ function getLanguageColor(language){
 
 function getWorkshops(workshops){
     $.each(workshops, function(index, workshop){
-            $('#workshops').append(
-                `<div class="custom-card">
+        if(count % 4 == 0){
+            latestRow = document.createElement("div");
+            latestRow.className = "row";
+            document.getElementById("workshops").appendChild(latestRow);
+        }
+
+            latestRow.innerHTML +=
+                `<div class="col-sm-3 custom-card">
                     <h5><a href="${workshop.url}">${workshop.title}</a></h5>
                     <p>${workshop.time}</p>
                     <p>${workshop.description}</p>
                 </div>`
-            );
+            ;
     });
 }
