@@ -114,6 +114,9 @@ a:hover{
     background-color: rgba(65, 132, 228, 0.15);
     border: 1px solid rgab(0,0,0,0);
 }
+.language{
+
+}
 .circle{
     display: inline-block;
     border-radius: 50%;

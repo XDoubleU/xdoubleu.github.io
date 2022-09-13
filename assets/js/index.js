@@ -1,4 +1,7 @@
+const COUNT_MAX = 8;
+
 let count = 0;
+
 
 function getExtraRepos(repos){
     $.each(repos, function(index, repo){
@@ -28,7 +31,7 @@ function getRepos(username){
         dataType: 'jsonp',
         success: function(data){
             $.each(data.data, function(index, repo){
-                if(count < 7 && repo.topics.length > 0 && repo.description != null){
+                if(count < COUNT_MAX && repo.topics.length > 0 && repo.description != null){
                     count += 1;
                     
                     $("#projects").append(
@@ -42,7 +45,7 @@ function getRepos(username){
                 }         
             });
 
-            if (count >= 7){
+            if (count >= COUNT_MAX){
                 $("#projects").append(
                     `<div class="col-sm-3 custom-card d-flex align-items-center justify-content-center">
                         <a href="https://github.com/${username}?tab=repositories"><h5>See more →</h5></a>
