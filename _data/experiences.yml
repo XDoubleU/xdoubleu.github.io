@@ -1,0 +1,33 @@
+- title: Blokkot-check-in
+  company: Brugge Studentenstad
+  time: September 2022 - July 2023
+  description: Web app that enables Brugge Studentenstad (NPO that organizes
+               activities for students in Bruges) to monitor the amount of students
+               present at a study location.
+               <br>
+               <br>
+               Can scale easily to more study locations, has an API endpoint to
+               enable Brugge Studentenstad to display available spots on their site.
+
+- title: DevOps Engineer Intern
+  company: Skyline Communications
+  time: July 2022
+  description: Made a tool that facilitates the work of investigation teams on the
+               customer DataMiner Systems by analyzing client scripts on the
+               platform.
+               <br>
+               <br>
+               Participated in all Agile ceremonies and iterated on feedback
+               received in presentations and by engineers that tested the tool.
+
+- title: ASP.NET Backend Developer
+  company: Inksane
+  time: February 2020 - July 2022
+  description: Remade backend for custom scheduler application that as being
+               used at four tattooshops. Did so from scratch with minimal
+               guidance. In the end this project was continued by another
+               company.
+               <br>
+               <br>
+               Iterated on the feedback from the frontend developer to make my
+               REST API easier to use.

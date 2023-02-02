@@ -1,4 +1,9 @@
+- title: Git & GitHub workshop
+  time: October 2022
+  description: In this workshop I gave a hands-on introduction to Git and GitHub to other Electronics & ICT Engineering students at my campus.
 - title: Webdevelopment for Dummies
   time: October 2022 - November 2022 
-  description: In these 6 workshops I give a hands-on introduction to web-development using Django.
-  url: https://xdoubleu.com/webdev-4-dummies-workshop/
+  description: In these 6 workshops I gave a hands-on introduction to web-development using Django.
+- title: GitHub and Linux for Dummies
+  time: November 2020 - December 2020
+  description: In these 3 workshops I gave a hands-on introduction to GitHub and Linux.

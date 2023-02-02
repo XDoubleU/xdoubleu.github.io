@@ -41,8 +41,8 @@
             <div class="main-content">
                 <div class="row content-row">
                     <div class="col-md-12 content-col">
-                        <h2 class="section-title">Some projects I worked on</h2>
-                        <div class="row" id="projects"></div>
+                        <h2 class="section-title">My professional experience</h2>
+                        <div class="row" id="experiences"></div>
                     </div>
                 </div>
 
@@ -50,6 +50,13 @@
                     <div class="col-md-12 content-col">
                         <h2 class="section-title">A couple of workshops I organized</h2>
                         <div class="row" id="workshops"></div>
+                    </div>
+                </div>
+
+                <div class="row content-row">
+                    <div class="col-md-12 content-col">
+                        <h2 class="section-title">Some projects I worked on</h2>
+                        <div class="row" id="projects"></div>
                     </div>
                 </div>
 
@@ -66,9 +73,9 @@
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script type="text/javascript">
-    getExtraRepos(JSON.parse('{{site.data.extra_repos | jsonify}}'));
     getRepos("{{site.data.info.username}}");
     getWorkshops(JSON.parse('{{site.data.workshops | jsonify}}'));
+    getExperiences(JSON.parse('{{site.data.experiences | jsonify}}'));
 </script>
 </body>
 </html>

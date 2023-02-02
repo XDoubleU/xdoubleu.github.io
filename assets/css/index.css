@@ -19,15 +19,25 @@ a:hover{
     font-size: 2em;
     text-decoration: none !important;
 }
+h5 {
+    font-weight: 700;
+}
+h6 {
+    font-style: italic;
+}
 
 /* Side */
 .side{
+    color: white;
     background: linear-gradient(-45deg, #ca0087, #8d53eb, #4075e7, #09bfec);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
+    display: flex;
 }
 .side-content{
-    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     text-align: center;
 }
 #picture-me{
@@ -39,21 +49,26 @@ a:hover{
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #names{
     margin-top: 1em;
 }
 #fullname{
-    font-family: 'Source Serif Pro', serif;
-    font-size: 26px;
-    font-weight: 600;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 900;
     line-height: 1.25;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #username{
-    font-family: 'Source Serif Pro', serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #bio{
     margin-top: 2em;
@@ -62,7 +77,7 @@ a:hover{
     display: block;
     padding: 0;
     width:fit-content;
-    margin: 2em auto 1em auto;
+    margin: -1.5em auto 2em auto;
     list-style-type: none;
 }
 #socials a{
@@ -76,9 +91,6 @@ a:hover{
           height: 100vh!important;  
           overflow: auto!important;
     }
-    .custom-card{
-        margin-left: 1em;
-    }
 }
 
 .content-row{
@@ -90,12 +102,15 @@ a:hover{
     min-width:21em;
 }
 .custom-card{
+    margin-left: 0.5em;
+    background-color: white;
+    color: black;
     display: inline-block;
     margin-top: 1em;
     padding: 1em;
     width: 20em;
-    border: 1px solid #7c7c7c;
-    border-radius: 1%;
+    border: 1px solid;
+    border-radius: 10px;
 }
 .tag{
     display: inline-block;
@@ -114,9 +129,6 @@ a:hover{
     background-color: rgba(65, 132, 228, 0.15);
     border: 1px solid rgab(0,0,0,0);
 }
-.language{
-
-}
 .circle{
     display: inline-block;
     border-radius: 50%;
@@ -127,13 +139,13 @@ a:hover{
 }
 .section-title{
     font-family: 'Source Serif Pro', serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 24px;
 }
 
 /* Footer */
 .footer{
-    margin-top:10em;
+    margin-top:5em;
 }
 #copyright{
     margin: 0 auto 1em;
