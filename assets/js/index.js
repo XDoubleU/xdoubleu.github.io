@@ -29,10 +29,8 @@ function generateLanguageHtml(language){
         return "";
     }
 
-    return `<span class="language">
-                <span class="circle" style="background-color: ${getLanguageColor(language)}"></span>
-                ${language}
-            </span>`;
+    return `<span class="circle" style="background-color: ${getLanguageColor(language)}"></span>
+            ${language}`;
 }
 
 function getLanguageColor(language){
@@ -64,11 +62,11 @@ function getRepos(username){
                     countProjects++;
                     
                     $("#projects").append(
-                        `<div class="col-sm-3 custom-card">
+                        `<div class="col-sm-3 custom-card" style="padding-bottom: 2.5em">
                             <a href="${repo.html_url}"><h5>${repo.name}</h5></a>
                             <div>${generateTagHtml(repo.topics)}</div>
                             <div>${generateDescriptionHtml(repo.description)}</div>
-                            <div>${generateLanguageHtml(repo.language)}</div>
+                            <div class="language">${generateLanguageHtml(repo.language)}</div>
                         </div>`
                     );
                 }         

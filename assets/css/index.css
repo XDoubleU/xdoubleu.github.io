@@ -102,6 +102,7 @@ h6 {
     min-width:21em;
 }
 .custom-card{
+    position: relative;
     margin-left: 0.5em;
     background-color: white;
     color: black;
@@ -136,6 +137,10 @@ h6 {
     height: 12px;
     margin-right: 4px;
     background-color: #539bf5;
+}
+.language {
+    position: absolute;
+    bottom: 1em;
 }
 .section-title{
     font-family: 'Source Serif Pro', serif;
