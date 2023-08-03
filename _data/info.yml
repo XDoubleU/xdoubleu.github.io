@@ -15,6 +15,6 @@ socials:
   - name: GitHub
     url: https://github.com/XDoubleU
     icon: simple-icons:github
-  - name: Hackerrank
-    url: https://www.hackerrank.com/xdoubleu
-    icon: cib:hackerrank
+  - name: Stack Overflow
+    url: https://stackoverflow.com/users/13913719/xdoubleu
+    icon: cib:stackoverflow
