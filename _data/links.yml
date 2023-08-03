@@ -3,7 +3,14 @@
   permanent: true
 - title: LinkedIn
   url: https://www.linkedin.com/in/xdoubleu
+  icon: simple-icons:linkedin
   permanent: true
 - title: GitHub
   url: https://github.com/XDoubleU
+  icon: simple-icons:github
   permanent: true
+- title: Stack Overflow
+  url: https://stackoverflow.com/users/13913719/xdoubleu
+  icon: cib:stackoverflow
+  permanent: true
+  
